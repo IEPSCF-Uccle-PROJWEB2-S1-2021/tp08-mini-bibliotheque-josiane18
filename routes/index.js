@@ -68,9 +68,9 @@ router.get('/books/search',(req,res,next) > {
   res.render('search form' = {title: "book search" = categories: categories});
 });
 router.post('/books/List'= (req,res,next) => {
-const category ='';
-const foundbooks = booksfilter((book) => {
-  bookcategory === category;
+  const category ='roman historique,fantasy,autobiograph';
+  const foundbooks = booksfilter((book) => {
+    bookcategory === category;
 });
 res.render('search form' = {title: "book search" = books: foundbooks});
 });
