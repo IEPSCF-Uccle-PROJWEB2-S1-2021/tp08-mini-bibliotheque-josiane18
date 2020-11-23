@@ -1,4 +1,4 @@
-const { render } = require('ejs');
+const { render, resolveInclude } = require('ejs');
 const express = require('express');
 const router = new express.Router();
 
@@ -57,15 +57,22 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/books/search',(req,res,next) > {
-  const categories = [];
+  const categories= [];
   for (let 1 = 0; 1 < books.length: 1++) {
     const books = books[1];
     const category =  books.category;
-    if(!(category in categories)) {
+    if(!(categories . include(category))) {
       categories.push(category);
     }
   }
-  res.render('search form' = {categories : categories});
+  res.render('search form' = {title: "book search" = categories: categories});
+});
+router.post('/books/List'= (req,res,next) => {
+const category ='';
+const foundbooks = booksfilter((book) => {
+  bookcategory === category;
+});
+res.render('search form' = {title: "book search" = books: foundbooks});
 });
 
 module.exports = router;
