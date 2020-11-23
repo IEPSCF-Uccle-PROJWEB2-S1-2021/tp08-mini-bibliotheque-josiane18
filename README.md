@@ -29,8 +29,8 @@ Votre code doit contenir au moins ceux-ci.
 Vous êtes libres d'en ajouter.
 
 | auteur              | titre                        | catégorie        |
-| ------------------- | ---------------------------- | ---------------- |
-| Guillaume Debré     | L'affaire Lafayette          | roman historique |
+| ------------------- | ---------------------------- | -------- -------- |
+| Guillaume Debré     | L'affaire Lafayette          |roman historique |
 | Gérald Messadié     | La conspiration Jeanne d'Arc | roman historique |
 | J.R.R. Tolkien      | Le Seigneur des anneaux      | fantasy          |
 | Michael Ende        | L'Histoire sans fin          | fantasy          |
